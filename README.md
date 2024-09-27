@@ -28,3 +28,48 @@ Com estas diferenças fica evidente que um modelo computacional em nuvem tem eno
 |OpEx| Os recursos financeiros são usados no consumo de recursos contratados conforme a necessidade, sendo do ponto de vista financeiro mais eficiente|
 
 Com estas informações agora ficou mais fácil compreender e tirar vantagem da computação em nuvem e iniciar o uso da plataforma Microsoft Azure de forma responsável e segura.
+
+---
+## Vantagens de uma Nuvem Pública
+
+A principio a nuvem pública é a melhor escolha em vários cenários, pois suas vantagens são;
+
+* Alta Disponibilidade
+* Escalabilidade e Elasticidade
+* Confiabilidade e Previsibilidade
+* Gerenciamento
+* Segurança e Governança
+
+### *Alta Disponibilidade*
+
+Trata-se de assegurar a máxima disponibilidade de tempo dos recursos disponíveis, e estes tempos são tratados como níveis de SLA para os recursos utilizados. No Microsoft Azure estes níveis correspondem em;
+
+|SLA|Indisponibilidade mensal|
+|--|--|
+|99%|7,2 Horas|
+|99.9%|43.2 minutos|
+|99,95%|21.6 minutos|
+|99,99%|4.32 minutos|
+|99,999%|25.9 segundos|
+
+### *Escalabilidade e Elasticidade*
+
+Compreende em ajustar seus recursos escalando os mesmos, seja aumentando recursos de vCPU´s ou aumentando a quantidade de discos de armazenamento conforme a necessidade. 
+
+No caso de elasticidade podemos expandir ou reduzir recursos de forma dinâmica. Um exemplo muito utilizado é o período de Black Friday, nos quais as lojas on-line possuem uma explosão de acessos de clientes e logo após uma redução brusca nos acessos.
+
+### *Confiabilidade e Previsibilidade*
+
+Confiabilidade na nuvem se demonstra na capacidade de manter seus recursos sempre disponíveis, isso é possivel pois fornecedores de nuvem possuem um modelo de infra distribuida, mesmo que uma infra se torne indisponível, os recurso estão replicados em outras infras em locais distintos, regiões distantes ou até mesmo em outros paises.
+
+E por fim a previsibilidade fornece ao cliente a confiança em ajustar seus recursos de acordo com suas demandas, sejam em desempenho ou mesmo em custo dos recursos utilizados.
+
+### *Gerenciamento*
+
+O gerenciamento de nuvem permite que o administrador possa executar, manipular, ajustar seus recursos de várias formas, além do painel via WEB o administrador pode usar um CLI, programar um API, usar o Powershell para este fim. Em um exercício prático um administrador consegue subir várias VM´s, dimensionar bases de dados ou mesmo programar thresholds através de scripts, otimizando ao máximo o tempo de administração dos recursos.
+
+### *Segurança e Governança*
+
+A nuvem permite que as organizações ou as empresas que as adota, tenham ferramentas para manter seus recursos em nuvem aderentes as regras de governaça das mesmas. Permitindo que as organizações auditem seus recursos na nuvem da mesma forma que os fazem em seus recursos locais.
+
+E na questão de segurança, a nuvem de acordo com seus recursos fornecidos, permite que as organizações gerenciem a segurança de seu ambiente de infra em nuvem exatamente como as fazem no ambiente on premises, ou se for adota soluções como SaaS esta segurança é gerenciada pela própria nuvem.
