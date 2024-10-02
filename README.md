@@ -73,3 +73,13 @@ O gerenciamento de nuvem permite que o administrador possa executar, manipular, 
 A nuvem permite que as organizações ou as empresas que as adota, tenham ferramentas para manter seus recursos em nuvem aderentes as regras de governaça das mesmas. Permitindo que as organizações auditem seus recursos na nuvem da mesma forma que os fazem em seus recursos locais.
 
 E na questão de segurança, a nuvem de acordo com seus recursos fornecidos, permite que as organizações gerenciem a segurança de seu ambiente de infra em nuvem exatamente como as fazem no ambiente on premises, ou se for adota soluções como SaaS esta segurança é gerenciada pela própria nuvem.
+
+## Serviços IaaS, PaaS e SaaS no Microsoft Azure
+
+Mas não só de maquinas virtuais se compõe os serviços de nuvem, na verdade são fornecidos pelos Cloud Provider como a Microsoft e Amazon, tipos distintos de serviços que compreendem em;
+
+***IaaS*** - Infra estrutura como serviço, no qual o cliente tem maior controle dos recursos contratados como tambén a responsabiliade em gerenciá-los. Como caracteristicas temos disponíveis na nuvem os mesmos recursos de infra estrutura local, podemos configurar servidores, firewall, dispositivos de redes exatamente como faríamos em um ambiente On Premises.
+
+***PaaS*** - Plataforma como serviço, nos permite contratar recursos como por exemplo bancos de dados, sem a necessidade de criar, instalar e administrar servidores e posteriormente instalar um DB. Nesta modalidade como clientes ainda temos responsabilidades no gerenciamento, acessos e segurança da plataforma usada ficando a cargo do Cloud Provider a responsabilidade de toda a infra que está abaixo da plataforma utilizada.
+
+***SaaS*** - Software como serviço, é a camada mais superficial de recursos, basicamente serviços como Microsoft 365, Microsoft Outlook, Microsoft Teams, Google Docs são exemplos de SaaS, onde usamos as aplicações com o nível de responsabilidade mais baixo por parte do cliente.
