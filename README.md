@@ -83,3 +83,27 @@ Mas não só de maquinas virtuais se compõe os serviços de nuvem, na verdade s
 ***PaaS*** - Plataforma como serviço, nos permite contratar recursos como por exemplo bancos de dados, sem a necessidade de criar, instalar e administrar servidores e posteriormente instalar um DB. Nesta modalidade como clientes ainda temos responsabilidades no gerenciamento, acessos e segurança da plataforma usada ficando a cargo do Cloud Provider a responsabilidade de toda a infra que está abaixo da plataforma utilizada.
 
 ***SaaS*** - Software como serviço, é a camada mais superficial de recursos, basicamente serviços como Microsoft 365, Microsoft Outlook, Microsoft Teams, Google Docs são exemplos de SaaS, onde usamos as aplicações com o nível de responsabilidade mais baixo por parte do cliente.
+
+## Regiões e Zonas do Microsoft Azure
+
+Como toda Infra de redes necessita de um plano de contingência, isso não é diferente com os serviços de Cloud, isso permite que os administradores configurem de acordo com os serviços contratados, regiões de disponibilidade, basicamente os serviços ou ambientes são espelhados em outros servidores, datacenters ou mesmo ambientes alocados em outras regiões. Isto é necessário para manter a disponibilidade tanto da Infra em nuvem quanto aos serviços contratados.
+
+***Zonas*** - São datacenter separados dentro da mesma região com o objetivo de manter a disponibilidade de recursos.
+
+***Região*** - Possuem datacenters próximos que permitem disponibilidade dos recursos e infra contratados. Como por exemplo um conjunto de datacenter se torna indisponivel, porém existem outros que compõe a mesma região, mesmo estando distantes e são ativados permitindo a máxima disponibilidade dos recursos de nuvem. Também é possivel dependendo da assinatura, manter a disponibilidade dos recursos entre regiões, desta forma o acesso se mantém em operação mesmo que uma região seja severamente afetada.
+
+***Região Soberana*** - São regiões que possuem datacenters dedicados a clientes governamentais, como por exemplo os Estados Unidos, sendo que fisicamente são isolados das demais regiões, como também os acessos físicos e tipo de assinatura de serviços são restritos.
+
+## Recursos do Microsoft Azure ##
+
+São denominados recursos do Azure máquinas virtuais, funções, banco de dados, redes virtuais, serviços de aplicativos e contas de armazenamento.
+
+E estes recursos podem ser organizados e manipulados criando os "Grupos de Recursos". Nestes grupos podemos criar um grupo com recursos utilizados para um ambiente de VM, DB e uma aplicação ou um outro grupo que compõe apenas de recursos de banco de dados. Lembrando que os recursos podem ser movidos entre grupos, mas nunca utilizados por dois grupos distintos.
+
+Quanto as aplicações estas podem utilizar recursos dentro degrupos distintos, um exemplo é um website que utiliza um DB do grupo de banco de dados e busca imagens de drive locados em discos virtuais em outro grupo de armazenamento.
+
+## Assnaturas do Microsoft Azure ##
+
+São utilizadas para acessar e utilizar os recursos contratados, as mesmas podem ser definidas de acordo com o uso dos recursos como por exemplo uma assinatura para uso e gerenciamento de um grupo de bando de dados, outra assinatura para a equipe de desenvolvimento que utiliza apenas os recursos designados a eles, etc.
+
+O importante das assinaturas é que aumentam a segurança no gerenciamento e acesso dos recursos, e para os administradores, as mesmas podem ser incluidas no gerenciamento de grupos, herdando os parâmetros definidos neste gerenciamento.
