@@ -102,8 +102,43 @@ E estes recursos podem ser organizados e manipulados criando os "Grupos de Recur
 
 Quanto as aplicações estas podem utilizar recursos dentro degrupos distintos, um exemplo é um website que utiliza um DB do grupo de banco de dados e busca imagens de drive locados em discos virtuais em outro grupo de armazenamento.
 
-## Assnaturas do Microsoft Azure ##
+## Assinaturas do Microsoft Azure ##
 
 São utilizadas para acessar e utilizar os recursos contratados, as mesmas podem ser definidas de acordo com o uso dos recursos como por exemplo uma assinatura para uso e gerenciamento de um grupo de bando de dados, outra assinatura para a equipe de desenvolvimento que utiliza apenas os recursos designados a eles, etc.
 
 O importante das assinaturas é que aumentam a segurança no gerenciamento e acesso dos recursos, e para os administradores, as mesmas podem ser incluidas no gerenciamento de grupos, herdando os parâmetros definidos neste gerenciamento.
+
+## Serviços de Computação do Azure ##
+
+O Microsoft Azure fornece os seguintes tipos de serviços de computação conforme a seguir;
+
+* Máquinas Virtuais
+* Área de trabalho virtual
+* Aplicações / Serviços
+* Serviço de Kubernetes (AKS)
+* Instâncias de Contêiners (exemplo Docker)
+* Serviços de Redes
+
+***Máquinas Virtuais***
+
+Modalidade IaaS que permite ao cliente criar VM´s com total controle dos recursos utilizados como vCPU, vRAM, vNET e etc. Permite criar conjuntos de dimensionamento onde pode-se escalar os recursos utilizados de forma elástica e automatizada. Também pode-se criar conjuntos de disponibilidade, onde se uma VM torna-se indisponível no rack físico, existem duas ou mais para substituir automáticamente e manter o acesso disponível. Este grupo de disponibilidade pode ser configurado de diversas formas através de domínios de falha e domínios de atualização, sendo o primeiro como exemplo mantendo em outros dois rack´s do datacenter uma cópia da VM principal, e o domínio de atualização são VM´s cópias da principal que vão atualizando os dados entre si evitando lentidão na utilização da principal, enquanto os dados são replicados para os domínios de falha.
+
+***Área de trabalho virtual***
+
+Nesta modalidade acessamos um ambiente de usuário através do acesso remoto, basicamente é o mesmo que em ambientes on-premises acessamos um servidor ou um computador já configurado. Neste ambiente não gerenciamos a máquina virtual ou o sistema em si, apenas nos logamos na sessão de usuário e utilizamos o ambiente como um computador físico.
+
+***Aplicações / Serviços***
+
+Nesta modalidade em PaaS podemos utilizar o Azure Functions que executa comandos através de eventos programados no qual não utiliza servidores, ou a plataforma de serviços para criação e implantação de aplicações WEB e API que são executados em .NET, JAVA, Node.js, Python, .NET Core e por fim em PHP.
+
+***Serviços de Kubernetes (AKS)***
+
+Este serviço permite a orquestração de contêiners mantendo a escalabidade e resiliênhcia do ambiente.
+
+***Instâncias de Contêiners***
+
+Nesta modalidade podemos implementar um contêiner para execução de uma aplicação, sem a necessidade de utilizar uma VM para esta execução. Isto traz benefícios do ponto de vista de uso de recursos, agilidade e compatibilidade de execução.
+
+***Serviços de Redes***
+
+Nesta modalidade temos disponíveis serviços de vNET, Gateway VPN, DNS e por fim o Express Route que interliga diretamente o ambiente em Nuvem com suas instalações físicas através de parceiros. 
