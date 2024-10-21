@@ -141,4 +141,44 @@ Nesta modalidade podemos implementar um contêiner para execução de uma aplica
 
 ***Serviços de Redes***
 
-Nesta modalidade temos disponíveis serviços de vNET, Gateway VPN, DNS e por fim o Express Route que interliga diretamente o ambiente em Nuvem com suas instalações físicas através de parceiros. 
+Nesta modalidade temos disponíveis serviços de vNET, Gateway VPN, DNS e por fim o Express Route que interliga diretamente o ambiente em Nuvem com suas instalações físicas através de parceiros.
+
+## Serviços de Armazenamento ##
+
+O primeiro passo para o armazenamento virtual no Azure é através da criação de uma conta de armazenamento, ou mais conhecida como Storage Account. Em sua criação é necessário criar um nome exclusivo em todo o serviço de armazenamento do Azure com letras minúsculas e números de 3 a 24 caracteres. A partir de sua criação podemos utilizar os demais serviços;
+
+* Blob - serviço de armazenamento de dados não estruturados como imagens, arquivos texto entre outros.
+* Discos - serviço de criação de unidades de discos virtuais, as mesmas criadas quando criamos uma VM.
+* Filas - serviço de armazenamento de mensagens, funciona como uma espécie de servidor Syslog.
+* Arquivos - serviço de compartilhamento de arquivos exatamente como é feito em ambientes On-Premises, no qual criamos um apontamento `smb:\\caminho` ou mapeamento.
+* Tabelas - serviço de armazenamento de dados estruturados, como tabelas.
+
+Os serviços de armazenamento quando são criados possuem camadas de acesso que são listadas como;
+
+* Frequente - Dados acessados com frequência.
+* Esporádico.- Dados com acesso esporárico a armazenados por 30 dias.
+* Frio - Dados com acesso esporárico a armazenados por 90 dias.
+* Arquivo Morto - Dados com acesso esporárico a armazenados por 180 dias.
+
+### Redundância de armazenamento ###
+
+O Microsoft Azure configura a redundância dos armazenamentos permitindo quatro opções conforme a necesidade.
+
+| Opção | Implantação | Durabilidade |
+|-------|-------------|--------------|
+|LRS - Redundância Local| Datacenter Individual | 11 noves |
+|ZRS - Redundância de Zona | Utiliza três zonas de disponibilidade | 12 noves |
+|GRS - Redundância Geográfica | Utiliza datacenter primário e região secundária | 16 noves |
+| GZRS - Redundância com Zona Geográfica | Três zonas primárias e uma região secundária | 16 noves |
+
+### Migrações ###
+
+O Microsoft Azure disponibiliza recursos para migrações que atendem diversos cenários e estes são;
+
+***Azure Data Box*** - serviço de migração de dados físicos, armazena até 80TB de dados. Permite mover backups de recuperação de desastre de locais remotos com conectividade limitada ou sem para o Azure fisicamente. Slide 21
+
+***AzCopy*** - Utilitário de linha de comando que sincroniza de forma unilateral. Ele copia Blobs ou arquivos para sua conta de armazenamento(Storage Account).
+
+***Gerenciamento de Armazenamento do Azure*** - Utiliza interface gráfica semelhante ao Windows Explorer, com compatibilidade com Windows, Linux e MacOS. Basicamente é o AzCopy em interface gráfica.
+
+***Sincronização de Arquivos do Azure*** - Sincroniza os arquivos de forma bidirecional, e a camada de nuvem mantém os arquivos com frequência no local, liberando espaço local dos arquivos menos utilizados.
