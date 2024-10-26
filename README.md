@@ -182,3 +182,50 @@ O Microsoft Azure disponibiliza recursos para migrações que atendem diversos c
 ***Gerenciamento de Armazenamento do Azure*** - Utiliza interface gráfica semelhante ao Windows Explorer, com compatibilidade com Windows, Linux e MacOS. Basicamente é o AzCopy em interface gráfica.
 
 ***Sincronização de Arquivos do Azure*** - Sincroniza os arquivos de forma bidirecional, e a camada de nuvem mantém os arquivos com frequência no local, liberando espaço local dos arquivos menos utilizados.
+
+## Identidade, Acesso e Segurança ##
+
+### Microsoft Entra ID ###
+
+Serviço de diretório do Microsoft Azure, é uma nova nomenclatura para o antigo Microsoft Active Directory, onde podemos gerenciar as identidades dos usuários, seus acessos a recursos e dispositivos, entre outros.
+
+***Microsoft Entra Domain Services***
+
+Permite sincronizar usuários em redes locais (On-Premises) para domínio da Nuvem de forma que toda atualização de usuários locais são sincronizadas no ambiente de nuvem. Lembrando que não é possível a sincronização reversa, como por exemplo criar um novo usuário na nuvem ele não fica disponível na rede local.
+
+### Autenticação e autorização ### 
+
+Métodos de Autenticação
+
+***SSO (Single Sign On)*** - permite o logon único do usuário em dispositivos, aplicações e serviços.
+
+***MFA*** - utiliza dois ou mais elementos(algo que você é/sabe/possui) para autenticação de usuário.
+
+***External ID (colaboração B2B)*** - utiliza identidades de usuários de fora da organização, como por exemplo o login usando um e-mail de terceiros ou uma conta de uma rede social.
+
+***External ID (colaboração B2C)*** - utiliza identidades de usuários consumidores de seus aplicativos autenticando através de sua conta de e-mail particular ou  de uma rede social.
+
+### Métodos de Autorização ###
+
+***Acesso condicional*** - é através de localização, aplicativo utilizado, dispositivo, associação de usuário ou grupo e por fim através de detecção de risco. 
+
+***RBAC - Controle de acesso baseado em função.*** - sua autorização é baseada em funções de credenciais, como por exemplo usuários que são integrantes do grupo "financeiro" após autenticados acessam recursos do departamento financeiro dentro do ambiente computacional.
+
+### Modelos de proteção ###
+
+***Zero-Trust (confiança zero)*** - modelo de segurança onde todos os acessos são criados com restrição máxima, no qual são liberados apenas recursos ou acessos no qual o usuário tem permissão.
+
+***Proteção em Camadas*** - é um modelo de segurança onde a proteção da camada superior blinda as camadas inferiores. Um exemplo de como funciona esse modelo é no painel abaixo;
+
+1. Segurança física
+2. Identidade e acesso
+3. Perímetro
+4. Rede
+5. Computação
+6. Aplicativo
+7. Dados
+
+### Microsoft Defender for Cloud ###
+
+É um serviço de proteção e monitoramento de ameaças do Microsoft Azure.
+Analisa e identifica ataques, detecta e bloqueia malware e analisa seu ambiente e recomenda melhorias.
