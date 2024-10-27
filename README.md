@@ -278,7 +278,7 @@ O Azure Policy permite avaliar e identificar os recursos que foram implantados a
 
 ### Bloqueio de recursos ###
 
-Através do portal do Azure podemos gerenciar os bloqueios aplicados na assinatura, nos grupos de recursos e por fim nos próprios recursos. Isso impede modificações ou exclusões acidentais ou de forma irresponsável. Lembrando que os bloqueios são herdáveis, portanto deve-se atentar a melhor estratégia de bloqueio.
+Através do portal do Azure podemos gerenciar os bloqueios aplicados na assinatura, nos grupos de recursos(Locks) e por fim nos próprios recursos. Isso impede modificações ou exclusões acidentais ou de forma irresponsável. Lembrando que os bloqueios são herdáveis, portanto deve-se atentar a melhor estratégia de bloqueio.
 
 |Tipos | Ler | Atualizar | Excluir |
 |---|---|---|---|
@@ -296,3 +296,28 @@ Portal da Microsoft onde é apresentando as regras que a Microsoft aplica a todo
 * Descoberta de dados automatizados
 * Classificação dos dados confidenciais
 * Linhagem dos dados de ponta a ponta
+
+## Ferramentas de Gerenciamento e Implantação ##
+
+Para gerenciar os recursos de nuvem da Microsoft Azure, podemos usar nativamente;
+
+* Portal do Azure
+* Azure PowerShell
+* Azure Cloud Shell
+* CLI (Interface de linha de comando)
+
+### Azure Arc ###
+
+É uma ferramenta de gerenciamento multicloud, podendo utilizá-lo em ambientes OnPremises, outras nuvens(AWS e GCP) e borda. Permite centralizar a gestão de recursos fora do Azure.
+
+### Azure Resource Manager (ARM) ###
+
+É uma camada de gerenciamento que trata scripts de gerenciamento de recursos do Azure. Basicamente todos os comandos que utilizamos através de várias interfaces seja Portal, CLI, PowerShell emitem os comandos diretamente para o ARM, que centraliza e direciona os comandos de recursos.
+
+O ARM utiliza linguagem JSON para gerenciar recursos sem a necessidade de usar códigos de programação, permitindo que seu código seja exportável para uso futuro.
+
+E para auxiliar os novos usuários, a Microsoft disponibiliza o Bicep que é uma linguagem nativa do Microsoft Azure para uso apenas na nuvem da Microsoft usado para automação de recursos da nuvem.
+
+### Infraestrutura como código ###
+
+Gerência da infraestrutura em código (scripts) permitindo manutenção, criação entre outros em escala e de forma otimizada. Construindo uma build padrão para  a infraestrutura em nuvem de forma ágil.
