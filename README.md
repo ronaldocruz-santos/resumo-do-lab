@@ -321,3 +321,20 @@ E para auxiliar os novos usuários, a Microsoft disponibiliza o Bicep que é uma
 ### Infraestrutura como código ###
 
 Gerência da infraestrutura em código (scripts) permitindo manutenção, criação entre outros em escala e de forma otimizada. Construindo uma build padrão para  a infraestrutura em nuvem de forma ágil.
+
+## Ferramentas de Monitoramento ##
+
+### Assistente do Azure ###
+
+Analisa os recursos implantados e apresenta recomendações com base nas boas práticas otimizando as implantações do Azure.
+
+Trazendo confiabilidade, segurança, custo, desempenho e excelência operacional em um painel demonstrativo.
+
+### Azure Monitor ###
+
+Apresenta um painel com a telemetria de seus recursos no qual coleta e analisa os dados de seu ambiente maximizando o desempenho e disponibilidade do mesmo.
+
+### Integridade do Serviço do Azure ###
+
+Apresenta os status de todos os serviços do Azure, exibindo degradações ou interrupções que afetam a todos os clientes em todas as regiões do Azure.
+Para uma visão mais voltada para nuvens individuais então é apresentada no Resource Health.
