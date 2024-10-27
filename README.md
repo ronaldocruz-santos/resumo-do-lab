@@ -229,3 +229,41 @@ Métodos de Autenticação
 
 É um serviço de proteção e monitoramento de ameaças do Microsoft Azure.
 Analisa e identifica ataques, detecta e bloqueia malware e analisa seu ambiente e recomenda melhorias.
+
+## Gerenciamento de custos no Microsoft Azure ##
+
+No Microsoft Azure temos um recurso que permite calcular custos e preços e também faz o gerenciamento de custos.
+
+Esta calculadora permite estimar os custos de migração ou implantação de recursos para nuvem, como também a calculadora de custo total de propriedade (TCO) usado para estimar custos ao migrar a infraestrutura para o Microsoft Azure comparando o ambiente atual para o ambiente em nuvem.
+
+### Fatores de custos ###
+
+1. Tipos de recursos - Custos agregados por recursos, como por exemplo uma VM para servidor de DB tem mais recursos e é mais custoso por ser IaaS do que apenas contratar um banco de dados na modalidade PaaS.
+
+2. Consumo - alguns serviços ou recursos tem cobrança por uso, portanto mal dimensionado o uso do serviço ou recurso pode ter um alto custo. Nesta situação planejamento é fundamental para determinar como será o modelo que pode ser de consumo ou de reserva(no qual tem uma cobrança ajustada) que pode ser mais econômica.
+
+3. Manutenção - ajuste de recursos para que seu consumo seja otimizado, neste caso o monitoramento do ambiente é importante para identificar recursos ociosos e ajustes no dimensionamento destes recursos, como por exemplo o uma VM que consome apenas 1GB de vRAM mas está configurada com 8GB, portanto estes  6 ou 7GB aumentam o valor da VM sem necessidade e a redução dessa memória faz o uso inteligente da VM, além de reduzir seu valor.
+
+4. Área geográfica - ajuste do local dos recursos antes de implantá-los é essencial para uma economia, pois dependendo da região geográfica, um recurso fica mais caro que em outro Em alguns casos pode-se pagar mais caro pelo recursos mas se faz necessário para atender a uma legislação do pais ou politica da empresa.
+
+5. tráfego de rede - custo de tráfego de redes entre regiões ou comunicações
+
+6. Assinatura - tipo e configuração de assinatura afetam os custos pois vários tipos de assinaturas possuem acessos a recursos distintos.
+
+### Azure Market Place ###
+
+Loja de aplicativos e serviços virtualizados de terceiros que podem ser adquiridos para uso em seu ambiente. Estes recursos não nativos(de terceiros) são de responsabilidade do cliente a sua manutenção e até mesmo suporte. A Microsoft não dá suporte ao produto, sempre acione o fabricante do recurso não nativo.
+
+### Gerenciamento de Custos ###
+
+O Microsoft Azure possui ferramentas de monitoramento de custos com relatórios de cobrança e gatilhos de alertas para um melhor controle do ambiente, como características então podemos afirmar que;
+
+- O gerenciamento permite recomendar ajustes de custos.
+- Permite alertar quando custos pré-definidos que estão no limiar, evitando surpresas na fatura.
+- Orçamento define os orçamentos de gastos para os recursos.
+
+### Tags(Marcas) do Microsoft Azure ###
+
+A função das tags é identificar recursos dentro do ambiente em nuvem no qual são utilizadas para identificar corretamente estes recursos nas faturas ou relatórios do Microsoft Azure.
+
+As tags não são obrigatórias e não herdáveis, portanto apesar de estarem disponível na hora de criar um recurso, são utilizadas para organizar os recursos principalmente para reunir informações de cobrança. São normalmente criadas em um par de nome-valor como por exemplo "Departamento" = "Financeiro".
