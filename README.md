@@ -246,7 +246,7 @@ Esta calculadora permite estimar os custos de migração ou implantação de rec
 
 4. Área geográfica - ajuste do local dos recursos antes de implantá-los é essencial para uma economia, pois dependendo da região geográfica, um recurso fica mais caro que em outro Em alguns casos pode-se pagar mais caro pelo recursos mas se faz necessário para atender a uma legislação do pais ou politica da empresa.
 
-5. tráfego de rede - custo de tráfego de redes entre regiões ou comunicações
+5. Tráfego de rede - custo de tráfego de redes entre regiões ou comunicações
 
 6. Assinatura - tipo e configuração de assinatura afetam os custos pois vários tipos de assinaturas possuem acessos a recursos distintos.
 
@@ -264,6 +264,35 @@ O Microsoft Azure possui ferramentas de monitoramento de custos com relatórios 
 
 ### Tags(Marcas) do Microsoft Azure ###
 
-A função das tags é identificar recursos dentro do ambiente em nuvem no qual são utilizadas para identificar corretamente estes recursos nas faturas ou relatórios do Microsoft Azure.
+A função das tags é identificar recursos dentro do ambiente em nuvem no qual são utilizadas para identificar corretamente estes recursos nas faturas ou relatórios do Microsoft Azure (Taxonomia).
 
 As tags não são obrigatórias e não herdáveis, portanto apesar de estarem disponível na hora de criar um recurso, são utilizadas para organizar os recursos principalmente para reunir informações de cobrança. São normalmente criadas em um par de nome-valor como por exemplo "Departamento" = "Financeiro".
+
+## Governança e conformidade ##
+
+### Azure Policy ###
+
+Ele permite que o administrador imponha padrões nos recursos de nuvem mantendo o uso destes recursos em conformidade com os padrões da empresa ou organização.
+
+O Azure Policy permite avaliar e identificar os recursos que foram implantados anteriormente e que não atendam as políticas implantadas, como fornece definições de políticas em categorias dos tipos de recursos como rede, segurança, computação e monitoramento.
+
+### Bloqueio de recursos ###
+
+Através do portal do Azure podemos gerenciar os bloqueios aplicados na assinatura, nos grupos de recursos e por fim nos próprios recursos. Isso impede modificações ou exclusões acidentais ou de forma irresponsável. Lembrando que os bloqueios são herdáveis, portanto deve-se atentar a melhor estratégia de bloqueio.
+
+|Tipos | Ler | Atualizar | Excluir |
+|---|---|---|---|
+|Excluir | SIM |SIM|NÃO|
+|ReadOnly | SIM | NÃO | NÃO |
+
+### Portal de Confiança do Serviço ###
+
+Portal da Microsoft onde é apresentando as regras que a Microsoft aplica a todos os seus serviços, como leis, protocolos e regras. Este portal é de acesso aberto a consulta pública.
+
+### Microsoft Purview ###
+
+É uma aplicação de gerenciamento de governança, risco e conformidade. Avaliando regras de compliance das organizações que estão na nuvem. Reunindo insights dos dados locais, multinuvem e software como serviço.
+
+* Descoberta de dados automatizados
+* Classificação dos dados confidenciais
+* Linhagem dos dados de ponta a ponta
